@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header id="header" class="bg-[#bb2339] py-[25px] fixed z-50 w-full ">
+        <div class="container mx-auto px-[20px]">
+            <div class="flex items-center justify-between">
+                <img class="" src="./images/head-logo.png" alt="logo">
+                <ul class="hidden lg:flex gap-[60px] items-center font-[700px] text-[white] whitespace-nowrap">
+                    <li>
+                        Home
+                    </li>
+                    <li>
+                        Menu
+                    </li>
+                    <li>
+                        News
+                    </li>
+                    <li>
+                        About Us
+                    </li>
+                    <li>
+                        Contact US
+                    </li>
+                    <li>
+                        <a class="w-[125px] text-white hover:text-black duration-[0.4s]  hover:bg-[white] flex justify-center items-center rounded-[50px] h-[48px] border-2 border-white"
+                            href="">Log in</a>
+                    </li>
+                </ul>
+                <button id="toggle" class="mr-[px] lg:mr-[0px] lg:hidden w-[50px] h-[40px] cursor-pointer border-1 border-white duration-[0.2s] hover:border-2 border-gray flex
+                            justify-center items-center rounded-[15px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="#ffff">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <ul id="menus"
+        class="flex-col rounded-tl-md-[50px] rounded-tr-[35px] rounded-br-[35px] transform gap-[25px] pt-[0px] sm:pt-[80px] justify-center sm:justify-start fixed top-0 w-[0vw] px-[20px] h-screen flex items-center bg-[#831525]/90 vw-[black] w-[50vw] h-screen z-100">
+        <li
+            class="text-[1px] sm:[16xp] flex gap-[10px] justify-center sm:justify-start cursor-pointer border-2 border-[#ffff] rounded-[50px] max-w-[250px] w-full py-[10px] flex justify-start px-[30px] items-center text-[#ADACAC] text-[20px]">
+            <a class="flex items-center  gap-[10px] text-[#0cce0c] text-[20px]" href="./index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#0cce0c">
+                    <path
+                        d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                </svg>
+                Home
+            </a>
+        </li>
+        <li
+            class="text-[1px] sm:[16xp] flex gap-[10px] justify-center sm:justify-start cursor-pointer border-2 border-[#ffff] rounded-[50px] max-w-[250px] w-full py-[10px] flex justify-start px-[30px] items-center text-[#ADACAC] text-[20px]">
+            <a class="flex items-center gap-[10px] text-[#ffff] text-[20px]" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#ffff">
+                    <path
+                        d="M240-80q-33 0-56.5-23.5T160-160v-80h-40v-80h40v-120h-40v-80h40v-120h-40v-80h40v-80q0-33 23.5-56.5T240-880h480q33 0 56.5 23.5T800-800v640q0 33-23.5 56.5T720-80H240Zm0-80h480v-640H240v80h40v80h-40v120h40v80h-40v120h40v80h-40v80Zm0 0v-640 640Zm140-120h60v-160q26-7 43-28.5t17-48.5v-163h-40v151h-30v-151h-40v151h-30v-151h-40v163q0 27 17 48.5t43 28.5v160Zm220 0h60v-400q-50 0-85 35t-35 85v120h60v160Z" />
+                </svg>
+                Menu
+            </a>
+        </li>
+        <li
+            class="text-[1px] sm:[16xp] flex gap-[10px] justify-center sm:justify-start cursor-pointer border-2 border-[#ffff] rounded-[50px] max-w-[250px] w-full py-[10px] flex justify-start px-[30px] items-center text-[#ADACAC] text-[20px]">
+            <a class="flex items-center gap-[10px] text-[#ffff] text-[20px]" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#ffff">
+                    <path
+                        d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h440l200 200v440q0 33-23.5 56.5T760-120H200Zm0-80h560v-400H600v-160H200v560Zm80-80h400v-80H280v80Zm0-320h200v-80H280v80Zm0 160h400v-80H280v80Zm-80-320v160-160 560-560Z" />
+                </svg>
+                News
+            </a>
+        </li>
+        <li
+            class="text-[1px] sm:[16xp] flex gap-[10px] justify-center sm:justify-start cursor-pointer border-2 border-[#ffff] rounded-[50px] max-w-[250px] w-full py-[10px] flex justify-start px-[30px] items-center text-[#ADACAC] text-[20px]">
+            <a class="flex items-center gap-[10px] text-[#ffff] text-[20px]" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#ffff">
+                    <path
+                        d="M710-150q-63 0-106.5-43.5T560-300q0-63 43.5-106.5T710-450q63 0 106.5 43.5T860-300q0 63-43.5 106.5T710-150Zm0-80q29 0 49.5-20.5T780-300q0-29-20.5-49.5T710-370q-29 0-49.5 20.5T640-300q0 29 20.5 49.5T710-230Zm-550-30v-80h320v80H160Zm90-250q-63 0-106.5-43.5T100-660q0-63 43.5-106.5T250-810q63 0 106.5 43.5T400-660q0 63-43.5 106.5T250-510Zm0-80q29 0 49.5-20.5T320-660q0-29-20.5-49.5T250-730q-29 0-49.5 20.5T180-660q0 29 20.5 49.5T250-590Zm230-30v-80h320v80H480Zm230 320ZM250-660Z" />
+                </svg>
+                About
+            </a>
+        </li>
+        <li
+            class="flex gap-[10px] border-2 cursor-pointer justify-center border-[#ffff] rounded-[50px] max-w-[250px] w-full py-[10px] flex justify-start px-[30px] items-center text-[#ADACAC] text-[20px]">
+            <a class="flex items-center gap-[10px] text-[#ffff] text-[20px]" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#ffff">
+                    <path
+                        d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+                </svg>
+                Contact
+            </a>
+        </li>
+        <li
+            class="flex gap-[10px] whitespace-nowrap border-2 justify-start border-[#ffff] cursor-pointer rounded-[50px] max-w-[250px] w-full py-[10px] flex justify- px-[30px] items- text-[#ADACAC] text-[20px]">
+            <a class="flex items-center gap-[10px] text-[#ffff] text-[20px]" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#ffff">
+                    <path
+                        d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z" />
+                </svg>
+                Log in
+            </a>
+        </li>
+        <svg id="close" class="top-10 absolute cursor-pointer right-5 sm:right-10" xmlns="http://www.w3.org/2000/svg"
+            height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffff">
+            <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+    </ul>
+
+    <main>
+        <section class="bg-[#bb2339] pt-[180px] pb-[170px]">
+            <div class="container mx-auto px-[40px]">
+                <div class="block flex-col lg:grid grid-cols-2">
+                    <div class="text-white">
+                        <h3 class="font-bold text-[18px] sm:text-[22px]">Chase the new Flavour</h3>
+                        <p
+                            class="text-[60px] whitespace-nowrap sm:text-[90px] leading-[70px] sm:leading-[110px] pt-20px] sm:pt-[40px] font-bold">
+                            The key to <br> Fine dining</p>
+                        <p class="pt-[28px] leading-[175%] tracking-wider">Sit tellus lobortis sed senectus vivamus
+                            molestie. <br> Condimentum volutpat morbi facilisis
+                            quam
+                            scelerisque <br> sapien. Et, penatibus aliquam amet tellus</p>
+                        <a class="max-w-[175px]  w-full h-[48px] flex items-center justify-center mt-[48px] hover:bg-white text-white  hover:text-black border-2 border-white rounded-[50px] duration-[0.3s]"
+                            href="">Explore Menu</a>
+                    </div>
+                    <img class="pt-[70px] sm:pt-[110px] lg:pt-[0px] block" src="./images/shashlik.png" alt="logo">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="pt-[110px] bg-[#f8f8f8] pb-[130px]">
+            <div class="container mx-auto px-[20px]">
+                <h1 class="text-[40px] sm:text-[48px] pb-[40px]  font-[800px] tracking-wider text-[#bb2339]">Popular
+                    Dishes</h1>
+                <div class="owl-carousel owl-theme">
+
+                    <div
+                        class="max-w-[350px] cursor-pointer w-full pt-[10px] h-[420px] bg-[white]  rounded-[10px] item">
+                        <img class="h-[248px] w-full" src="./images/shashlik-2.png" alt="img">
+                        <div class="flex items-center justify-center flex-col">
+                            <b
+                                class="text-[#2a2929] flex justify-center items-center text-center pt-[10px] font-[800px]">Barbecue
+                                Shish kebab Shashlik <br> Skewer</b>
+                            <svg class="mt-[15px]" width="108" height="20" viewBox="0 0 108 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 134">
+                                    <path id="Star 1"
+                                        d="M9.42937 1.75623C9.60898 1.20344 10.391 1.20344 10.5706 1.75623L12.1104 6.49524C12.1908 6.74245 12.4211 6.90983 12.6811 6.90983H17.664C18.2452 6.90983 18.4869 7.6536 18.0166 7.99524L13.9854 10.9241C13.7751 11.0769 13.6871 11.3477 13.7674 11.5949L15.3072 16.3339C15.4868 16.8867 14.8541 17.3464 14.3839 17.0048L10.3527 14.0759C10.1424 13.9231 9.85762 13.9231 9.64733 14.0759L5.61609 17.0048C5.14586 17.3464 4.51317 16.8867 4.69278 16.3339L6.23258 11.5949C6.3129 11.3477 6.22491 11.0769 6.01462 10.9241L1.98337 7.99524C1.51315 7.6536 1.75481 6.90983 2.33605 6.90983H7.31893C7.57887 6.90983 7.80924 6.74245 7.88957 6.49524L9.42937 1.75623Z"
+                                        fill="#FFEA28" />
+                                    <path id="Star 2"
+                                        d="M31.4294 1.75623C31.609 1.20344 32.391 1.20344 32.5706 1.75623L34.1104 6.49524C34.1908 6.74245 34.4211 6.90983 34.6811 6.90983H39.664C40.2452 6.90983 40.4869 7.6536 40.0166 7.99524L35.9854 10.9241C35.7751 11.0769 35.6871 11.3477 35.7674 11.5949L37.3072 16.3339C37.4868 16.8867 36.8541 17.3464 36.3839 17.0048L32.3527 14.0759C32.1424 13.9231 31.8576 13.9231 31.6473 14.0759L27.6161 17.0048C27.1459 17.3464 26.5132 16.8867 26.6928 16.3339L28.2326 11.5949C28.3129 11.3477 28.2249 11.0769 28.0146 10.9241L23.9834 7.99524C23.5131 7.6536 23.7548 6.90983 24.336 6.90983H29.3189C29.5789 6.90983 29.8092 6.74245 29.8896 6.49524L31.4294 1.75623Z"
+                                        fill="#FFEA28" />
+                                    <path id="Star 3"
+                                        d="M53.4294 1.75623C53.609 1.20344 54.391 1.20344 54.5706 1.75623L56.1104 6.49524C56.1908 6.74245 56.4211 6.90983 56.6811 6.90983H61.664C62.2452 6.90983 62.4869 7.6536 62.0166 7.99524L57.9854 10.9241C57.7751 11.0769 57.6871 11.3477 57.7674 11.5949L59.3072 16.3339C59.4868 16.8867 58.8541 17.3464 58.3839 17.0048L54.3527 14.0759C54.1424 13.9231 53.8576 13.9231 53.6473 14.0759L49.6161 17.0048C49.1459 17.3464 48.5132 16.8867 48.6928 16.3339L50.2326 11.5949C50.3129 11.3477 50.2249 11.0769 50.0146 10.9241L45.9834 7.99524C45.5131 7.6536 45.7548 6.90983 46.336 6.90983H51.3189C51.5789 6.90983 51.8092 6.74245 51.8896 6.49524L53.4294 1.75623Z"
+                                        fill="#FFEA28" />
+                                    <path id="Star 4"
+                                        d="M75.4294 1.75623C75.609 1.20344 76.391 1.20344 76.5706 1.75623L78.1104 6.49524C78.1908 6.74245 78.4211 6.90983 78.6811 6.90983H83.664C84.2452 6.90983 84.4869 7.6536 84.0166 7.99524L79.9854 10.9241C79.7751 11.0769 79.6871 11.3477 79.7674 11.5949L81.3072 16.3339C81.4868 16.8867 80.8541 17.3464 80.3839 17.0048L76.3527 14.0759C76.1424 13.9231 75.8576 13.9231 75.6473 14.0759L71.6161 17.0048C71.1459 17.3464 70.5132 16.8867 70.6928 16.3339L72.2326 11.5949C72.3129 11.3477 72.2249 11.0769 72.0146 10.9241L67.9834 7.99524C67.5131 7.6536 67.7548 6.90983 68.336 6.90983H73.3189C73.5789 6.90983 73.8092 6.74245 73.8896 6.49524L75.4294 1.75623Z"
+                                        fill="#FFEA28" />
+                                    <path id="Star 5"
+                                        d="M97.4294 1.75623C97.609 1.20344 98.391 1.20344 98.5706 1.75623L100.11 6.49524C100.191 6.74245 100.421 6.90983 100.681 6.90983H105.664C106.245 6.90983 106.487 7.6536 106.017 7.99524L101.985 10.9241C101.775 11.0769 101.687 11.3477 101.767 11.5949L103.307 16.3339C103.487 16.8867 102.854 17.3464 102.384 17.0048L98.3527 14.0759C98.1424 13.9231 97.8576 13.9231 97.6473 14.0759L93.6161 17.0048C93.1459 17.3464 92.5132 16.8867 92.6928 16.3339L94.2326 11.5949C94.3129 11.3477 94.2249 11.0769 94.0146 10.9241L89.9834 7.99524C89.5131 7.6536 89.7548 6.90983 90.336 6.90983H95.3189C95.5789 6.90983 95.8092 6.74245 95.8896 6.49524L97.4294 1.75623Z"
+                                        fill="#C1C1C1" />
+                                </g>
+                            </svg>
+                            <b class="text-[20px] pt-[15px]">$12.00</b>
+                        </div>
+                    </div>
+
+                    <div
+                        class="max-w-[350px] cursor-pointer w-full pt-[10px] h-[420px] bg-[white]  rounded-[10px] item">
+                        <img class="h-[248px] w-full" src="./images/pizza.png" alt="img">
+                        <div class="flex items-center justify-center flex-col">
+                            <b
+                                class="text-[#2a2929] flex justify-center items-center text-center pt-[10px] font-[800px]">Barbecue
+                                Shish kebab Shashlik <br> Skewer</b>
+                            <svg class="mt-[15px]" width="108" height="20" viewBox="0 0 108 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 134">
+                                    <path id="Star 1"
+                                        d="M9.42937 1.75623C9.60898 1.20344 10.391 1.20344 10.5706 1.75623L12.1104 6.49524C12.1908 6.74245 12.4211 6.90983 12.6811 6.90983H17.664C18.2452 6.90983 18.4869 7.6536 18.0166 7.99524L13.9854 10.9241C13.7751 11.0769 13.6871 11.3477 13.7674 11.5949L15.3072 16.3339C15.4868 16.8867 14.8541 17.3464 14.3839 17.0048L10.3527 14.0759C10.1424 13.9231 9.85762 13.9231 9.64733 14.0759L5.61609 17.0048C5.14586 17.3464 4.51317 16.8867 4.69278 16.3339L6.23258 11.5949C6.3129 11.3477 6.22491 11.0769 6.01462 10.9241L1.98337 7.99524C1.51315 7.6536 1.75481 6.90983 2.33605 6.90983H7.31893C7.57887 6.90983 7.80924 6.74245 7.88957 6.49524L9.42937 1.75623Z"
+                                        fill="#FFEA28" />
+                                    <path id="Star 2"
+                                        d="M31.4294 1.75623C31.609 1.20344 32.391 1.20344 32.5706 1.75623L34.1104 6.49524C34.1908 6.74245 34.4211 6.90983 34.6811 6.90983H39.664C40.2452 6.90983 40.4869 7.6536 40.0166 7.99524L35.9854 10.9241C35.7751 11.0769 35.6871 11.3477 35.7674 11.5949L37.3072 16.3339C37.4868 16.8867 36.8541 17.3464 36.3839 17.0048L32.3527 14.0759C32.1424 13.9231 31.8576 13.9231 31.6473 14.0759L27.6161 17.0048C27.1459 17.3464 26.5132 16.8867 26.6928 16.3339L28.2326 11.5949C28.3129 11.3477 28.2249 11.0769 28.0146 10.9241L23.9834 7.99524C23.5131 7.6536 23.7548 6.90983 24.336 6.90983H29.3189C29.5789 6.90983 29.8092 6.74245 29.8896 6.49524L31.4294 1.75623Z"
+                                        fill="#FFEA28" />
+                                    <path id="Star 3"
+                                        d="M53.4294 1.75623C53.609 1.20344 54.391 1.20344 54.5706 1.75623L56.1104 6.49524C56.1908 6.74245 56.4211 6.90983 56.6811 6.90983H61.664C62.2452 6.90983 62.4869 7.6536 62.0166 7.99524L57.9854 10.9241C57.7751 11.0769 57.6871 11.3477 57.7674 11.5949L59.3072 16.3339C59.4868 16.8867 58.8541 17.3464 58.3839 17.0048L54.3527 14.0759C54.1424 13.9231 53.8576 13.9231 53.6473 14.0759L49.6161 17.0048C49.1459 17.3464 48.5132 16.8867 48.6928 16.3339L50.2326 11.5949C50.3129 11.3477 50.2249 11.0769 50.0146 10.9241L45.9834 7.99524C45.5131 7.6536 45.7548 6.90983 46.336 6.90983H51.3189C51.5789 6.90983 51.8092 6.74245 51.8896 6.49524L53.4294 1.75623Z"
+                                        fill="#FFEA28" />
+                                    <path id="Star 4"
+                                        d="M75.4294 1.75623C75.609 1.20344 76.391 1.20344 76.5706 1.75623L78.1104 6.49524C78.1908 6.74245 78.4211 6.90983 78.6811 6.90983H83.664C84.2452 6.90983 84.4869 7.6536 84.0166 7.99524L79.9854 10.9241C79.7751 11.0769 79.6871 11.3477 79.7674 11.5949L81.3072 16.3339C81.4868 16.8867 80.8541 17.3464 80.3839 17.0048L76.3527 14.0759C76.1424 13.9231 75.8576 13.9231 75.6473 14.0759L71.6161 17.0048C71.1459 17.3464 70.5132 16.8867 70.6928 16.3339L72.2326 11.5949C72.3129 11.3477 72.2249 11.0769 72.0146 10.9241L67.9834 7.99524C67.5131 7.6536 67.7548 6.90983 68.336 6.90983H73.3189C73.5789 6.90983 73.8092 6.74245 73.8896 6.49524L75.4294 1.75623Z"
+                                        fill="#FFEA28" />
+                                    <path id="Star 5"
+                                        d="M97.4294 1.75623C97.609 1.20344 98.391 1.20344 98.5706 1.75623L100.11 6.49524C100.191 6.74245 100.421 6.90983 100.681 6.90983H105.664C106.245 6.90983 106.487 7.6536 106.017 7.99524L101.985 10.9241C101.775 11.0769 101.687 11.3477 101.767 11.5949L103.307 16.3339C103.487 16.8867 102.854 17.3464 102.384 17.0048L98.3527 14.0759C98.1424 13.9231 97.8576 13.9231 97.6473 14.0759L93.6161 17.0048C93.1459 17.3464 92.5132 16.8867 92.6928 16.3339L94.2326 11.5949C94.3129 11.3477 94.2249 11.0769 94.0146 10.9241L89.9834 7.99524C89.5131 7.6536 89.7548 6.90983 90.336 6.90983H95.3189C95.5789 6.90983 95.8092 6.74245 95.8896 6.49524L97.4294 1.75623Z"
+                                        fill="#C1C1C1" />
+                                </g>
+                            </svg>
+                            <b class="text-[20px] pt-[15px]">$12.00</b>
+                        </div>
+                    </div>
+
+                    <div
+                        class="max-w-[350px] cursor-pointer w-full pt-[10px] h-[420px] bg-[white]  rounded-[10px] item">
+                        <img class="h-[248px] w-full" src="./images/shashlik-3.png" alt="img">
+                        <div class="flex items-center justify-center flex-col">
+                            <b
+                                class="text-[#2a2929] flex justify-center items-center text-center pt-[10px] font-[800px]">Barbecue
+                                Shish kebab Shashlik <br> Skewer</b>
+                            <svg class="mt-[15px]" width="108" height="20" viewBox="0 0 108 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 134">
+                                    <path id="Star 1"
+                                        d="M9.42937 1.75623C9.60898 1.20344 10.391 1.20344 10.5706 1.75623L12.1104 6.49524C12.1908 6.74245 12.4211 6.90983 12.6811 6.90983H17.664C18.2452 6.90983 18.4869 7.6536 18.0166 7.99524L13.9854 10.9241C13.7751 11.0769 13.6871 11.3477 13.7674 11.5949L15.3072 16.3339C15.4868 16.8867 14.8541 17.3464 14.3839 17.0048L10.3527 14.0759C10.1424 13.9231 9.85762 13.9231 9.64733 14.0759L5.61609 17.0048C5.14586 17.3464 4.51317 16.8867 4.69278 16.3339L6.23258 11.5949C6.3129 11.3477 6.22491 11.0769 6.01462 10.9241L1.98337 7.99524C1.51315 7.6536 1.75481 6.90983 2.33605 6.90983H7.31893C7.57887 6.90983 7.80924 6.74245 7.88957 6.49524L9.42937 1.75623Z"
+                                        fill="#FFEA28" />
+                                    <path id="Star 2"
+                                        d="M31.4294 1.75623C31.609 1.20344 32.391 1.20344 32.5706 1.75623L34.1104 6.49524C34.1908 6.74245 34.4211 6.90983 34.6811 6.90983H39.664C40.2452 6.90983 40.4869 7.6536 40.0166 7.99524L35.9854 10.9241C35.7751 11.0769 35.6871 11.3477 35.7674 11.5949L37.3072 16.3339C37.4868 16.8867 36.8541 17.3464 36.3839 17.0048L32.3527 14.0759C32.1424 13.9231 31.8576 13.9231 31.6473 14.0759L27.6161 17.0048C27.1459 17.3464 26.5132 16.8867 26.6928 16.3339L28.2326 11.5949C28.3129 11.3477 28.2249 11.0769 28.0146 10.9241L23.9834 7.99524C23.5131 7.6536 23.7548 6.90983 24.336 6.90983H29.3189C29.5789 6.90983 29.8092 6.74245 29.8896 6.49524L31.4294 1.75623Z"
+                                        fill="#FFEA28" />
+                                    <path id="Star 3"
+                                        d="M53.4294 1.75623C53.609 1.20344 54.391 1.20344 54.5706 1.75623L56.1104 6.49524C56.1908 6.74245 56.4211 6.90983 56.6811 6.90983H61.664C62.2452 6.90983 62.4869 7.6536 62.0166 7.99524L57.9854 10.9241C57.7751 11.0769 57.6871 11.3477 57.7674 11.5949L59.3072 16.3339C59.4868 16.8867 58.8541 17.3464 58.3839 17.0048L54.3527 14.0759C54.1424 13.9231 53.8576 13.9231 53.6473 14.0759L49.6161 17.0048C49.1459 17.3464 48.5132 16.8867 48.6928 16.3339L50.2326 11.5949C50.3129 11.3477 50.2249 11.0769 50.0146 10.9241L45.9834 7.99524C45.5131 7.6536 45.7548 6.90983 46.336 6.90983H51.3189C51.5789 6.90983 51.8092 6.74245 51.8896 6.49524L53.4294 1.75623Z"
+                                        fill="#FFEA28" />
+                                    <path id="Star 4"
+                                        d="M75.4294 1.75623C75.609 1.20344 76.391 1.20344 76.5706 1.75623L78.1104 6.49524C78.1908 6.74245 78.4211 6.90983 78.6811 6.90983H83.664C84.2452 6.90983 84.4869 7.6536 84.0166 7.99524L79.9854 10.9241C79.7751 11.0769 79.6871 11.3477 79.7674 11.5949L81.3072 16.3339C81.4868 16.8867 80.8541 17.3464 80.3839 17.0048L76.3527 14.0759C76.1424 13.9231 75.8576 13.9231 75.6473 14.0759L71.6161 17.0048C71.1459 17.3464 70.5132 16.8867 70.6928 16.3339L72.2326 11.5949C72.3129 11.3477 72.2249 11.0769 72.0146 10.9241L67.9834 7.99524C67.5131 7.6536 67.7548 6.90983 68.336 6.90983H73.3189C73.5789 6.90983 73.8092 6.74245 73.8896 6.49524L75.4294 1.75623Z"
+                                        fill="#FFEA28" />
+                                    <path id="Star 5"
+                                        d="M97.4294 1.75623C97.609 1.20344 98.391 1.20344 98.5706 1.75623L100.11 6.49524C100.191 6.74245 100.421 6.90983 100.681 6.90983H105.664C106.245 6.90983 106.487 7.6536 106.017 7.99524L101.985 10.9241C101.775 11.0769 101.687 11.3477 101.767 11.5949L103.307 16.3339C103.487 16.8867 102.854 17.3464 102.384 17.0048L98.3527 14.0759C98.1424 13.9231 97.8576 13.9231 97.6473 14.0759L93.6161 17.0048C93.1459 17.3464 92.5132 16.8867 92.6928 16.3339L94.2326 11.5949C94.3129 11.3477 94.2249 11.0769 94.0146 10.9241L89.9834 7.99524C89.5131 7.6536 89.7548 6.90983 90.336 6.90983H95.3189C95.5789 6.90983 95.8092 6.74245 95.8896 6.49524L97.4294 1.75623Z"
+                                        fill="#C1C1C1" />
+                                </g>
+                            </svg>
+                            <b class="text-[20px] pt-[15px]">$12.00</b>
+                        </div>
+                    </div>
+
+                    <div
+                        class="max-w-[350px] cursor-pointer w-full pt-[10px] h-[420px] bg-[white]  rounded-[10px] item">
+                        <img class="h-[248px] w-full" src="./images/burger.png" alt="img">
+                        <div class="flex items-center justify-center flex-col">
+                            <b
+                                class="text-[#2a2929] flex justify-center items-center text-center pt-[10px] font-[800px]">Barbecue
+                                Shish kebab Shashlik <br> Skewer</b>
+                            <svg class="mt-[15px]" width="108" height="20" viewBox="0 0 108 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 134">
+                                    <path id="Star 1"
+                                        d="M9.42937 1.75623C9.60898 1.20344 10.391 1.20344 10.5706 1.75623L12.1104 6.49524C12.1908 6.74245 12.4211 6.90983 12.6811 6.90983H17.664C18.2452 6.90983 18.4869 7.6536 18.0166 7.99524L13.9854 10.9241C13.7751 11.0769 13.6871 11.3477 13.7674 11.5949L15.3072 16.3339C15.4868 16.8867 14.8541 17.3464 14.3839 17.0048L10.3527 14.0759C10.1424 13.9231 9.85762 13.9231 9.64733 14.0759L5.61609 17.0048C5.14586 17.3464 4.51317 16.8867 4.69278 16.3339L6.23258 11.5949C6.3129 11.3477 6.22491 11.0769 6.01462 10.9241L1.98337 7.99524C1.51315 7.6536 1.75481 6.90983 2.33605 6.90983H7.31893C7.57887 6.90983 7.80924 6.74245 7.88957 6.49524L9.42937 1.75623Z"
+                                        fill="#FFEA28" />
+                                    <path id="Star 2"
+                                        d="M31.4294 1.75623C31.609 1.20344 32.391 1.20344 32.5706 1.75623L34.1104 6.49524C34.1908 6.74245 34.4211 6.90983 34.6811 6.90983H39.664C40.2452 6.90983 40.4869 7.6536 40.0166 7.99524L35.9854 10.9241C35.7751 11.0769 35.6871 11.3477 35.7674 11.5949L37.3072 16.3339C37.4868 16.8867 36.8541 17.3464 36.3839 17.0048L32.3527 14.0759C32.1424 13.9231 31.8576 13.9231 31.6473 14.0759L27.6161 17.0048C27.1459 17.3464 26.5132 16.8867 26.6928 16.3339L28.2326 11.5949C28.3129 11.3477 28.2249 11.0769 28.0146 10.9241L23.9834 7.99524C23.5131 7.6536 23.7548 6.90983 24.336 6.90983H29.3189C29.5789 6.90983 29.8092 6.74245 29.8896 6.49524L31.4294 1.75623Z"
+                                        fill="#FFEA28" />
+                                    <path id="Star 3"
+                                        d="M53.4294 1.75623C53.609 1.20344 54.391 1.20344 54.5706 1.75623L56.1104 6.49524C56.1908 6.74245 56.4211 6.90983 56.6811 6.90983H61.664C62.2452 6.90983 62.4869 7.6536 62.0166 7.99524L57.9854 10.9241C57.7751 11.0769 57.6871 11.3477 57.7674 11.5949L59.3072 16.3339C59.4868 16.8867 58.8541 17.3464 58.3839 17.0048L54.3527 14.0759C54.1424 13.9231 53.8576 13.9231 53.6473 14.0759L49.6161 17.0048C49.1459 17.3464 48.5132 16.8867 48.6928 16.3339L50.2326 11.5949C50.3129 11.3477 50.2249 11.0769 50.0146 10.9241L45.9834 7.99524C45.5131 7.6536 45.7548 6.90983 46.336 6.90983H51.3189C51.5789 6.90983 51.8092 6.74245 51.8896 6.49524L53.4294 1.75623Z"
+                                        fill="#FFEA28" />
+                                    <path id="Star 4"
+                                        d="M75.4294 1.75623C75.609 1.20344 76.391 1.20344 76.5706 1.75623L78.1104 6.49524C78.1908 6.74245 78.4211 6.90983 78.6811 6.90983H83.664C84.2452 6.90983 84.4869 7.6536 84.0166 7.99524L79.9854 10.9241C79.7751 11.0769 79.6871 11.3477 79.7674 11.5949L81.3072 16.3339C81.4868 16.8867 80.8541 17.3464 80.3839 17.0048L76.3527 14.0759C76.1424 13.9231 75.8576 13.9231 75.6473 14.0759L71.6161 17.0048C71.1459 17.3464 70.5132 16.8867 70.6928 16.3339L72.2326 11.5949C72.3129 11.3477 72.2249 11.0769 72.0146 10.9241L67.9834 7.99524C67.5131 7.6536 67.7548 6.90983 68.336 6.90983H73.3189C73.5789 6.90983 73.8092 6.74245 73.8896 6.49524L75.4294 1.75623Z"
+                                        fill="#FFEA28" />
+                                    <path id="Star 5"
+                                        d="M97.4294 1.75623C97.609 1.20344 98.391 1.20344 98.5706 1.75623L100.11 6.49524C100.191 6.74245 100.421 6.90983 100.681 6.90983H105.664C106.245 6.90983 106.487 7.6536 106.017 7.99524L101.985 10.9241C101.775 11.0769 101.687 11.3477 101.767 11.5949L103.307 16.3339C103.487 16.8867 102.854 17.3464 102.384 17.0048L98.3527 14.0759C98.1424 13.9231 97.8576 13.9231 97.6473 14.0759L93.6161 17.0048C93.1459 17.3464 92.5132 16.8867 92.6928 16.3339L94.2326 11.5949C94.3129 11.3477 94.2249 11.0769 94.0146 10.9241L89.9834 7.99524C89.5131 7.6536 89.7548 6.90983 90.336 6.90983H95.3189C95.5789 6.90983 95.8092 6.74245 95.8896 6.49524L97.4294 1.75623Z"
+                                        fill="#C1C1C1" />
+                                </g>
+                            </svg>
+                            <b class="text-[20px] pt-[15px]">$12.00</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-[120px]">
+            <div class="container mx-auto px-[20px]">
+                <h1 class="text-[30px] sm:text-[48px] text-[#bb2339] mb-[50px]">Our Regular Menu Pack</h1>
+                <div class="owl-carousel owl-theme">
+                    <li id="all"
+                        class="max-w-[auto] w-full  inline-block text-center px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
+                        All</li>
+                    <li class="max-w-[auto] w-full text-center inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]"
+                        id="shawarma-head">
+                        Shawarma
+                    </li>
+                    <li id="turk-kebab"
+                        class="max-w-[auto] whitespace-nowrap w-full inline-block text-center px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
+                        Turk Kebab</li>
+                    <li id="burger"
+                        class="max-w-[auto] whitespace-nowrap w-full text-center inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
+                        Hamburger Kebab</li>
+                    <li id="doner"
+                        class="max-w-[auto] w-full whitespace-nowrap text-center inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
+                        Doner Kabab</li>
+                    <li id="shish"
+                        class="max-w-[auto] w-full whitespace-nowrap text-center inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
+                        Shish Kebab</li>
+                    <li id="french"
+                        class="max-w-[auto] w-full whitespace-nowrap text-center h-[auto] inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
+                        French fries Pizza</li>
+                    <li id="dissert"
+                        class="max-w-[auto] w-full text-center h-[auto] inline-block px-[30px] text-[#bb2339] hover:text-[white] duration-[0.3s] cursor-pointer hover:bg-[#bb2339] rounded-[20px] py-[7px] border-[2px] border-[#bb2339]">
+                        Disserts</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-[90px] pb-[250px]" id="all-product">
+            <div class="container mx-auto px-[20px] ">
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px] group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[#e1dcdc] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shashlik-4.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shashlik-3.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/lavash.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/5-teks.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px] group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/pizza.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/sandwich.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/non-kebab.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/burger.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px] group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/longer.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/kebab-5.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shashlik-3.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/5-teks.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-[90px] pb-[250px]" id="shawarma">
+            <div class="container mx-auto px-[20px] ">
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[#e1dcdc] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full bg-[white] group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shawarma.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/lavash.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shawarma-2.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shawarma-3.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shawarma-3.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shawarma.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/non-kebab.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/burger.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px]overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/lavash.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shawarma-5.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shawarma-4.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/lavash.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-[90px] pb-[250px]" id="turk-kebabi">
+            <div class="container mx-auto px-[20px] ">
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px]  overflow-hidden group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[#e1dcdc] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full bg-[white] group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/turk-kebab.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/turk-kebab-2.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/turk-kebab-3.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/turk-kebab-2.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/turk-kebab-5.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shashlik-2.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/turk-kebab-3.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/turk-kebab.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/turk-kebab-6.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/turk-kebab-3.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/turk-kebab-4.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shashlik-2.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-[90px] pb-[250px]" id="hamburger">
+            <div class="container mx-auto px-[20px] ">
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px]  overflow-hidden group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[#e1dcdc] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full bg-[white] group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/hamburger-1.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/burger.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/hamburger-2.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/hamburger-6.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/hamburger-4.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/hamburger-5.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/hamburger-6.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/burger.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/hamburger-1.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/hamburger-4.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/hamburger-6.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/hamburger-5.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-[90px] pb-[250px]" id="shish-kabab">
+            <div class="container mx-auto px-[20px] ">
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px]  overflow-hidden group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[#e1dcdc] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full bg-[white] group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shish2.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shish-3.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shish-4.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shish-5.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shish-6.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shish-7.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shish.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shish-3.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shish-5.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shish-7.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shish-4.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/shish2.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-[90px] pb-[250px]" id="pizzas">
+            <div class="container mx-auto px-[20px] ">
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px]  overflow-hidden group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[#e1dcdc] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full bg-[white] group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/pizza.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/pizza-2.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/pizza-3.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/pizza-4.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/pizaa-5.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/pizza-6.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/pizza-7.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/pizza.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/pizza-2.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/pizza-6.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/pizza-3.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/pizza-7.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-[90px] pb-[250px]" id="disserts">
+            <div class="container mx-auto px-[20px] ">
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px]  overflow-hidden group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[#e1dcdc] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full bg-[white] group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/dissert.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/dissert-2.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/dissert-3.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/dissert-4.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/dissert-5.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/dissert-6.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/dissert-7.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/dissert-8.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col justify-center items-center gap-[50px] sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/dissert-2.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/dissert-6.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/dissert-3.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535] pt-[5px]">Barbecue Shish kebab <br>
+                            Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                    <div
+                        class="max-w-[350px] overflow-hidden group group w-full duration-[0.2s] hover:shadow-lg hover:shadow-[gray] cursor-pointer h-[420px] rounded-[20px] border-r-[1px] hover:border-r-[0px] border-r-[#e1dcdc] border-b-[1px] hover:border-b-[0px] border-b-[#e1dcdc]">
+                        <img class="w-full group-hover:scale-[1.1] duration-[0.4s] h-[250px] pt-[15px]"
+                            src="./images/dissert-7.png" alt="img">
+                        <b class="text-center text-[22px] block text-[#353535]">Barbecue Shish kebab <br> Shashlik
+                            Skewer</b>
+                        <b class="text-center block pt-[20px] text-[26px] text-[#bb2339]">$12.00</b>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/home.js"></script>
+</body>
+
+</html>
